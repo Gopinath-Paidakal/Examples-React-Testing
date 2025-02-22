@@ -3,8 +3,8 @@ import React from 'react'
 export default function Testing() {
 
      const person = [
-        {empid : 1, firstName : "Gopinath", lastName : "Paidakal", age : 45, eyeColor: "Blue"},
-        {empid : 2, firstName : "Sethu", lastName : "Raman", age : 40, eyeColor : "Blue"}
+        {empid : 1, firstName : "Sunil", lastName : "Kumar", age : 35, eyeColor: "Blue"},
+        {empid : 2, firstName : "Bahaskar", lastName : "Readdy", age : 50, eyeColor : "Blue"}
     ]
 
     const person1 = {
@@ -33,6 +33,7 @@ export default function Testing() {
     console.log(person);
 
   return (
+
     <div><h3>Testing</h3>
     
         <p>{person.firstName}</p>
@@ -88,12 +89,7 @@ export default function Testing() {
                 </option>
             ))}
         </select> 
-
-      
-
-
     </div>
-  
   )
 }
 
