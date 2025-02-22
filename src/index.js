@@ -10,7 +10,7 @@ import './index.css';
 //import DataGridFromWebApi from './DataGridFromWebApi.js';
 //import  BootstrapNavbar  from './BootstrapNavbar';
 //import 'bootstrap/dist/css/bootstrap.min.css';
-import AdminLayout from './Layout/AdminLayout';
+//import AdminLayout from './Layout/AdminLayout';
 //import RouteExample from './Route/RouteExample';
 //import BootstrapNavbar from './BootstrapLayout/BootstrapNavbar';
 //import BootstrapSidebar from './BootstrapLayout/BootstrapSidebar';
@@ -19,8 +19,9 @@ import AdminLayout from './Layout/AdminLayout';
 //import GetSubscriberById from './GetSubscriberById'; 
 //import GetMultipleData from './GetMultipleData';
 //import FillForm from './FillForm';
-import FillForm1 from './FillForm1';
+//import FillForm1 from './FillForm1';
 //import FillForm2 from './FillForm2';
+import AutoCompleteDropdown from './AutoCompleteDropdown';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,7 +32,7 @@ root.render(
     {/* <DropDownFromWebApi/> */}
     {/* <DataGridFromWebApi/> */}
     {/* <BootstrapNavbar/> */}
-    <AdminLayout/> 
+    {/* <AdminLayout/>  */}
     {/* <RouteExample /> */}
     {/* <BootstrapNavbar />
     <BootstrapSidebar />
@@ -41,7 +42,7 @@ root.render(
     {/* <FillForm/> */}
     {/* <FillForm1 /> */}
     {/* <FillForm2 /> */}
-
+    <AutoCompleteDropdown/>
 
   </React.StrictMode>
 );
