@@ -89,6 +89,8 @@ export default function Testing() {
                 </option>
             ))}
         </select> 
+
+        <input type="date"></input>
     </div>
   )
 }

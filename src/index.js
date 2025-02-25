@@ -22,7 +22,8 @@ import './index.css';
 //import FillForm1 from './FillForm1';
 //import FillForm2 from './FillForm2';
 //import AutoCompleteDropdown from './AutoCompleteDropdown';
-import Testing from './Testing';
+//import Testing from './Testing';
+import DateRange from './DateRange';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -44,7 +45,8 @@ root.render(
     {/* <FillForm1 /> */}
     {/* <FillForm2 /> */}
     {/* <AutoCompleteDropdown/> */}
-    <Testing/>
+    {/* <Testing/> */}
+    <DateRange/>
 
   </React.StrictMode>
 );
