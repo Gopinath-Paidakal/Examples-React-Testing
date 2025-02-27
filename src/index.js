@@ -24,7 +24,9 @@ import './index.css';
 //import AutoCompleteDropdown from './AutoCompleteDropdown';
 //import Testing from './Testing';
 //import DateRange from './DateRange';
-import Box from './Box';
+//import Box from './Box';
+import CRUDDataGrid from './CRUDDataGrid';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -48,7 +50,8 @@ root.render(
     {/* <AutoCompleteDropdown/> */}
     {/* <Testing/> */}
     {/* <DateRange/> */}
-    <Box/>
+    {/* <Box/> */}
+    <CRUDDataGrid/>
 
   </React.StrictMode>
 );
