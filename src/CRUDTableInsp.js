@@ -81,8 +81,8 @@ export default function CRUDTableInsp() {
       >
         Add Numerical Measurement
       </Button>
-      <TableContainer>
-        <Table>
+      <TableContainer fullWidth= "500px">
+        <Table> 
           <TableHead>
             <TableRow>
               <TableCell>ID</TableCell>
@@ -138,16 +138,16 @@ export default function CRUDTableInsp() {
         <DialogTitle>{editing ? "Edit Numerical Measurement" : "Add Numerical Measurement"}</DialogTitle>
         <DialogContent>
           <TextField label="Measurement Name" name="measurementName" fullWidth margin="dense" value={form.measurementName} onChange={handleChange} />
-          <TextField label="Measuring Instrument" name="measuringInsturment" type="number" fullWidth margin="dense" value={form.measuringInsturment} onChange={handleChange} />
+          <TextField label="Measuring Instrument" name="measuringInstrument" fullWidth margin="dense" value={form.measuringInstrument} onChange={handleChange} />
           <TextField label="Units" name="units" fullWidth margin="dense" value={form.units} onChange={handleChange} />
 
-          <TextField label="Base Measure" name="baseMeasure" fullWidth margin="dense" value={form.measurementName} onChange={handleChange} />
-          <TextField label="Upper Limit" name="upperLimit" type="number" fullWidth margin="dense" value={form.measuringInsturment} onChange={handleChange} />
-          <TextField label="Lower Limit" name="lowerLimit" fullWidth margin="dense" value={form.units} onChange={handleChange} />
+          <TextField label="Base Measure" name="baseMeasure" fullWidth margin="dense" value={form.baseMeasure} onChange={handleChange} />
+          <TextField label="Upper Limit" name="upperLimit" type="number" fullWidth margin="dense" value={form.upperLimit} onChange={handleChange} />
+          <TextField label="Lower Limit" name="lowerLimit" type="number" fullWidth margin="dense" value={form.lowerLimit} onChange={handleChange} />
 
-          <TextField label="Actuals" name="actuals" fullWidth margin="dense" value={form.measurementName} onChange={handleChange} />
-          <TextField label="Status" name="status" type="number" fullWidth margin="dense" value={form.measuringInsturment} onChange={handleChange} />
-          <TextField label="Notes" name="notes" fullWidth margin="dense" value={form.units} onChange={handleChange} />
+           <TextField label="Actuals" name="actuals" fullWidth margin="dense" value={form.actuals} onChange={handleChange} />
+          <TextField label="Status" name="status"  fullWidth margin="dense" value={form.status} onChange={handleChange} />
+          <TextField label="Notes" name="notes" fullWidth margin="dense" value={form.notes} onChange={handleChange} /> 
 
         </DialogContent>
         <DialogActions>
