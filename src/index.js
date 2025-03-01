@@ -25,8 +25,12 @@ import './index.css';
 //import Testing from './Testing';
 //import DateRange from './DateRange';
 //import Box from './Box';
+<<<<<<< HEAD
 import CRUDDataGrid from './CRUDDataGrid';
 
+=======
+import CRUDTable from './CRUDTable';
+>>>>>>> 6b6da84515212fc5a299fe6da2fc741d3e5f637b
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
