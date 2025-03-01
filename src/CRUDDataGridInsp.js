@@ -5,8 +5,8 @@ import { useForm } from "react-hook-form";
 import { Delete, Edit } from "@mui/icons-material";
 
 const initialRows = [
-  { id: 1, measurementName: "John Doe", measuringInstrument: "john@example.com", units: 25 },
-  { id: 2, measurementName: "Jane Smith", measuringInstrument: "jane@example.com", units: 30 },
+  { id: 1, measurementName: "Dia 47 Bore Depth 12 +/- 0.1", measuringInstrument: "Vernier Caliper", units: 25 },
+  { id: 2, measurementName: "Boring (Dia) 52 0.0 / + 0.03", measuringInstrument: "Oscilloscope", units: 30 },
 ];
 
 export default function CRUDDataGridInsp() {

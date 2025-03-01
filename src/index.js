@@ -25,12 +25,14 @@ import './index.css';
 //import Testing from './Testing';
 //import DateRange from './DateRange';
 //import Box from './Box';
-<<<<<<< HEAD
-import CRUDDataGrid from './CRUDDataGrid';
+//import CRUDDataGrid from './CRUDDataGrid';
+//import CRUDDataGridInsp from './CRUDDataGridInsp';
 
-=======
-import CRUDTable from './CRUDTable';
->>>>>>> 6b6da84515212fc5a299fe6da2fc741d3e5f637b
+//import CRUDTable from './CRUDTable';
+import CRUDTableInsp from './CRUDTableInsp';
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -55,7 +57,13 @@ root.render(
     {/* <Testing/> */}
     {/* <DateRange/> */}
     {/* <Box/> */}
-    <CRUDDataGrid/>
+
+    {/* <CRUDDataGrid/> */}
+    {/* <CRUDDataGridInsp/> */}
+    
+    {/* <CRUDTable/> */}
+    <CRUDTableInsp/>
+  
 
   </React.StrictMode>
 );
