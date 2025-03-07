@@ -23,22 +23,22 @@ const initialData = [
 //   { id: 3, name: "Charlie", age: 35, email: "charlie@example.com" },
   { id: 1, measurementName: "Dia 47 Bore Depth 12 +/- 0.1", measuringInstrument: "Vernier Caliper", 
            units: 25, baseMeasure: "mm", upperLimit: "12.00", lowerLimit: "11.00",
-           actuals: "aaaa", status: "Accepted", notes: "Completely Tested" },
-  { id: 2, measurementName: "Boring (Dia) 52 0.0 / + 0.03", measuringInstrument: "Oscilloscope", 
+           actuals: "aaaa", status: "Accepted", notes: "Tested" },
+  { id: 2, pinNo: "101", measurementName: "Boring (Dia) 52 0.0 / + 0.03", measuringInstrument: "Oscilloscope", 
           units: 30, baseMeasure: "mm", upperLimit: "15.00", lowerLimit: "12.00",
-          actuals: "aaaa", status: "Accepted", notes: "Completely Tested" },
+          actuals: "aaaa", status: "Accepted", notes: "Tested" },
 ];
 
 export default function CRUDTableInsp() {
   const [data, setData] = useState(initialData);
   const [open, setOpen] = useState(false);
   const [editing, setEditing] = useState(null);
-  const [form, setForm] = useState({ id: "", measurementName: "", measuringInstrument: "", units: "",
+  const [form, setForm] = useState({ id: "", pinNo:"", measurementName: "", measuringInstrument: "", units: "",
                                     baseMeasure: "", upperLimit: "", lowerLimit: "",
                                     actuals: "", status: "", notes: "" });
 
   // Open modal for editing or adding
-  const handleOpen = (row = { id: "", measurementName: "", measuringInstrument: "", units: "",
+  const handleOpen = (row = { id: "", pinNo:"", measurementName: "", measuringInstrument: "", units: "",
                             baseMeasure: "", upperLimit: "", lowerLimit: "",
                             actuals: "", status: "", notes: "" }) => {
     setForm(row);
@@ -96,6 +96,7 @@ export default function CRUDTableInsp() {
           <TableHead>
             <TableRow>
               <TableCell>ID</TableCell>
+              <TableCell>PIN #</TableCell>
               <TableCell>Measurment Name</TableCell>
               <TableCell>Measuring Instrument</TableCell>
               <TableCell>Units</TableCell>
@@ -116,6 +117,7 @@ export default function CRUDTableInsp() {
             {data.map((row) => (
               <TableRow key={row.id}>
                 <TableCell>{row.id}</TableCell>
+                <TableCell>{row.pinNo}</TableCell>
                 <TableCell>{row.measurementName}</TableCell>
                 <TableCell>{row.measuringInstrument}</TableCell>
                 <TableCell>{row.units}</TableCell>
@@ -155,7 +157,11 @@ export default function CRUDTableInsp() {
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>{editing ? "Edit Numerical Measurement" : "Add Numerical Measurement"}</DialogTitle>
         <DialogContent>
+<<<<<<< HEAD
           
+=======
+          <TextField label="PIN #" name="pinNo" fullWidth margin="dense" value={form.pinNo} onChange={handleChange} />
+>>>>>>> ba4bda3d63342f74b20b39fbd0af13789a7b19f2
           <TextField label="Measurement Name" name="measurementName" fullWidth margin="dense" value={form.measurementName} onChange={handleChange} />
           <TextField label="Measuring Instrument" name="measuringInstrument" fullWidth margin="dense" value={form.measuringInstrument} onChange={handleChange} />
           <TextField label="Units" name="units" fullWidth margin="dense" value={form.units} onChange={handleChange} />
