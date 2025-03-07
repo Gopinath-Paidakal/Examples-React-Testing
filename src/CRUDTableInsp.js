@@ -14,7 +14,8 @@ import {
   DialogTitle,
   TextField,
 } from "@mui/material";
-import { Delete, Edit, Add } from "@mui/icons-material";
+import { Delete, Edit, Add  } from "@mui/icons-material";
+import { Box } from '@mui/material';
 
 const initialData = [
 //   { id: 1, name: "Alice", age: 25, email: "alice@example.com" },
@@ -72,6 +73,15 @@ export default function CRUDTableInsp() {
   };
 
   return (
+   <div>
+    <Box>
+  
+     <div>
+      <label htmlfor="PIN #">PIN</label>
+      <input typefor="text" />
+    </div>
+
+    </Box>
     <Paper sx={{ padding: 2 }}>
       <Button
         variant="contained"
@@ -131,12 +141,21 @@ export default function CRUDTableInsp() {
             ))}
           </TableBody>
         </Table>
+        {/* <Button
+            variant="contained"
+            startIcon={<Add />}
+            onClick={() => handleOpen()}
+            sx={{ marginBottom: 2 }}
+          >
+            Add Non Numerical Measurement
+          </Button> */}
       </TableContainer>
 
       {/* Dialog for Add/Edit */}
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>{editing ? "Edit Numerical Measurement" : "Add Numerical Measurement"}</DialogTitle>
         <DialogContent>
+          
           <TextField label="Measurement Name" name="measurementName" fullWidth margin="dense" value={form.measurementName} onChange={handleChange} />
           <TextField label="Measuring Instrument" name="measuringInstrument" fullWidth margin="dense" value={form.measuringInstrument} onChange={handleChange} />
           <TextField label="Units" name="units" fullWidth margin="dense" value={form.units} onChange={handleChange} />
@@ -156,5 +175,6 @@ export default function CRUDTableInsp() {
         </DialogActions>
       </Dialog>
     </Paper>
+    </div>
   );
 }
